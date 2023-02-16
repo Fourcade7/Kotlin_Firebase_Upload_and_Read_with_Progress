@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/noimage"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageviewopengallery"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></ImageView>
+    <EditText
+        android:layout_margin="15dp"
+        android:hint="enter product name"
+        android:id="@+id/edittextimagename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <ProgressBar
+        android:id="@+id/progressbaruploadimage"
+        android:visibility="gone"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ProgressBar>
+
+    <ProgressBar
+        android:id="@+id/progressBarhorizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="40dp"
+        android:text="0%"
+        android:id="@+id/textviewprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <Button
+        android:id="@+id/buttonuploadimage"
+        android:text="upload to firebase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
